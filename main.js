@@ -100,3 +100,21 @@ if(test1.operator === "add") {
 
 console.log(result);
 challenge3.innerHTML += "<h3>" + result + "</h3>";
+
+//Let's implement the zipObject function that takes and array of names and an array of ages and smashes them into one object.
+
+Example:
+
+var names = ['fred', 'barney'];
+var ages = [30,40];
+//Output:  { 'fred': 30, 'barney': 40 }
+
+var challenge3 = document.getElementById('challenge3');
+var result = {};
+
+for (var i = 0; i < names.length; i++){
+ result[names[i]] = ages[i];
+}
+console.log (result);
+
+challenge3.innerHTML += "<h3>" + result + "</h3>";
