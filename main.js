@@ -118,3 +118,31 @@ for (var i = 0; i < names.length; i++){
 console.log (result);
 
 challenge3.innerHTML += "<h3>" + result + "</h3>";
+
+// challenge 5
+var challenge5 = document.getElementById('challenge5');
+
+var candidate1 = {
+    minSalary: 120000
+  };
+  let job1 = {
+    maxSalary: 140000
+  }
+  
+  var affordableSalary =  (job1.maxSalary - (job1.maxSalary *.10));
+  if (candidate1.minSalary < affordableSalary) {
+      var result = "We can afford to higher candidate1";
+  } else {"we cant afford"}
+
+  console.log (result);
+  challenge5.innerHTML += "<h3>" + result + "</h3>";
+  //output is true.  this job can hire any minSalary less than $126,000
+  
+  
+//   var candidate1 = {
+//     minSalary: 950000
+//   };
+//   let job1 = {
+//     maxSalary: 100000
+//   }
+  //output is false.  this job can hire any minSalary less than $90,000
