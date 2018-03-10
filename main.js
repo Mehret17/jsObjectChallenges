@@ -75,3 +75,28 @@ var winnerList = [
   }
 console.log(winnerTotal);
 challenge2.innerHTML += "<h3>"+winnerTotal+"</h3>";
+
+//challenge 3
+
+// Given an object containing two numbers and an arithmetic operator, return the appropriate math result.
+
+// The four operators are "add", "subtract", "divide", "multiply".
+
+var test1 = {a: 5, b:2, operator: "add"};  //7
+var test1 = {a: 5, b:2, operator: "subtract"}; //3
+var test1 = {a: 5, b:2, operator: "multiply"}; //10
+var test1 = {a: 5, b:2, operator: "divide"}; //2.5
+
+var challenge3 = document.getElementById('challenge3');
+if(test1.operator === "add") {
+    var result = test1.a + test1.b;
+} else if (test1.operator === "subtract") {
+   var result = test1.a - test1.b;
+} else if (test1.operator === "multiply") {
+    var result = test1.a * test1.b;
+} else if (test1.operator === "divide") {
+    var result = test1.a / test1.b;
+}
+
+console.log(result);
+challenge3.innerHTML += "<h3>" + result + "</h3>";
